@@ -1,0 +1,2 @@
+cd Projects/Asteroids
+source venv/bin/activate
