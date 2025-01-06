@@ -46,10 +46,8 @@ def main():
             for bullet in shots:
                 if asteroid.collides_with(bullet):
                     bullet.kill()
-                    if asteroid.split() is not None:
-                        new_asteroid_one, new_asteroid_two = asteroid.split()
-                        asteroids.add(new_asteroid_one, new_asteroid_two)
-        
+                    asteroid.split()
+                            
         screen.fill("black")
         
         for obj in drawable:
